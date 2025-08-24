@@ -1,0 +1,44 @@
+# Pillter 프로젝트 리팩토링 계획
+
+## 1. 최종 목표
+
+기존의 Massive View Controller 구조에서 벗어나, 유지보수와 테스트가 용이한 최신 iOS 아키텍처로 전환한다. 데이터 처리 방식을 명확히 분리하여 코드의 안정성과 확장성을 높인다.
+
+## 2. 핵심 아키텍처: MVVM (Model-View-ViewModel)
+
+- **목표**: View(UI)와 Business Logic(데이터 처리)의 완벽한 분리.
+- **View (`UIViewController`)**: UI 요소의 생명주기 관리, 사용자 입력(터치, 스크롤 등)을 ViewModel에 전달하는 역할만 수행한다. UIKit에 대한 의존성을 가진다.
+- **ViewModel**: View를 위한 데이터를 가공하고, 상태(State)를 관리한다. 비즈니스 로직(API 호출, 데이터베이스 쿼리 등)을 수행한다. UIKit에 의존하지 않아 테스트가 용이하다.
+- **Model (`struct`)**: 앱에서 사용하는 순수한 데이터 객체. (예: `Pill`, `Pharmacy`, `Alarm`)
+
+## 3. 데이터 처리 전략
+
+### 3.1. 의약품 정보 (정적 데이터)
+
+- **문제점**: `PillInfo.json`을 직접 로드하여 메모리 부담 및 유지보수 어려움.
+- **해결책**: **사전 생성된 SQLite 데이터베이스** 사용.
+- **실행 계획**:
+    1.  개발 환경에서 `PillInfo.json`을 파싱하여 `.sqlite` 파일을 생성하는 스크립트 작성.
+    2.  생성된 `.sqlite` 파일을 앱 번들에 포함.
+    3.  앱 첫 실행 시, 번들의 DB 파일을 Documents 디렉토리로 복사.
+    4.  `PillRepository` 또는 `PillService`와 같은 객체를 통해 DB에 접근하여 데이터를 조회.
+
+### 3.2. 약국 위치 정보 (실시간 데이터)
+
+- **문제점**: `SeoulPharmacy.json` (오래된 데이터)과 `MKLocalSearch` (부정확할 수 있는 데이터) 혼용.
+- **해결책**: **Naver 지도 API**를 이용한 실시간 데이터 조회로 통일.
+- **실행 계획**:
+    1.  `SeoulPharmacy.json` 파일 및 관련 코드 완전 제거.
+    2.  `MKLocalSearch` 관련 코드 제거.
+    3.  `NetworkService` 또는 `NaverMapAPIService`를 구현하여 Naver 지도 API 연동.
+    4.  사용자 위치나 검색어 기반으로 약국 정보를 실시간으로 요청하고, 응답받은 데이터를 `Pharmacy` 모델로 파싱하여 사용.
+
+### 3.3. 사용자 데이터 (알람, 나의 약 목록)
+
+- **문제점**: Firebase, Realm 등 여러 기술에 데이터가 분산되어 있음.
+- **해결책**: **Core Data**를 사용한 로컬 데이터베이스로 통합.
+- **실행 계획**:
+    1.  `Alarm`, `MyPill` 등에 대한 Core Data 모델(`NSManagedObject`) 정의.
+    2.  `CoreDataStack` 또는 `PersistenceManager`를 구현하여 데이터 CRUD(생성, 읽기, 업데이트, 삭제) 로직 중앙 관리.
+    3.  기존 Firebase 및 Realm 관련 코드 제거.
+    4.  모든 사용자 데이터는 Core Data를 통해 관리하여 오프라인에서도 완벽하게 동작하도록 보장.

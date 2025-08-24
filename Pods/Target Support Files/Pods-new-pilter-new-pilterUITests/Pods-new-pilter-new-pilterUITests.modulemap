@@ -1,0 +1,6 @@
+framework module Pods_new_pilter_new_pilterUITests {
+  umbrella header "Pods-new-pilter-new-pilterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

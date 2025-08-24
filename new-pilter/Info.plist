@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>SUITE-Variable</string>
+        <string>SUITE-SemiBold.otf</string>
+        <string>SUITE-Regular.otf</string>
+        <string>SUITE-Medium.otf</string>
+        <string>SUITE-Heavy.otf</string>
+        <string>SUITE-ExtraBold.otf</string>
+        <string>SUITE-Light.otf</string>
+        <string>SUITE-Bold.otf</string>
+        <string>ConcertOne-Regular.ttf</string>
+        <string>SOYO Maple Bold.otf</string>
+        <string>Cafe24Decobox.ttf</string>
+    </array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -15,8 +29,7 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					
 				</dict>
 			</array>
 		</dict>

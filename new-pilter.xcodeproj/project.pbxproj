@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B13329D2E1BEB540013ADB0 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 1B13329C2E1BEB540013ADB0 /* FlexLayout */; };
+		1B13329F2E1BEB540013ADB0 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 1B13329E2E1BEB540013ADB0 /* PinLayout */; };
+		1B1332B72E1D0EA60013ADB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1332B62E1D0EA60013ADB0 /* Assets.xcassets */; };
+		312DCB147398038B8305E31F /* Pods_new_pilterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D63DD96DB3A71090C2EC044 /* Pods_new_pilterTests.framework */; };
+		40DF98652C0C252CF0594FF1 /* Pods_new_pilter_new_pilterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF56EDDEBBE4E9EFD2B31B2 /* Pods_new_pilter_new_pilterUITests.framework */; };
+		9801A3A217981C613FC2EA8D /* Pods_new_pilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74726E2711626B5F684B4A0 /* Pods_new_pilter.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1BBD86412E13E9E100CB4D1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B0CA32685F93E208C02AFB4 /* Pods-new-pilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-new-pilter.release.xcconfig"; path = "Target Support Files/Pods-new-pilter/Pods-new-pilter.release.xcconfig"; sourceTree = "<group>"; };
+		1B1332B62E1D0EA60013ADB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BBD862A2E13E9E000CB4D1C /* new-pilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "new-pilter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBD86402E13E9E100CB4D1C /* new-pilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "new-pilterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBD864A2E13E9E100CB4D1C /* new-pilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "new-pilterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DF56EDDEBBE4E9EFD2B31B2 /* Pods_new_pilter_new_pilterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_new_pilter_new_pilterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB958357AD19184DA62B052 /* Pods-new-pilterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-new-pilterTests.release.xcconfig"; path = "Target Support Files/Pods-new-pilterTests/Pods-new-pilterTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D63DD96DB3A71090C2EC044 /* Pods_new_pilterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_new_pilterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8010C7421BAC7B48C0EEEF4 /* Pods-new-pilterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-new-pilterTests.debug.xcconfig"; path = "Target Support Files/Pods-new-pilterTests/Pods-new-pilterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B579E8CAA923F134B1F0DD79 /* Pods-new-pilter-new-pilterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-new-pilter-new-pilterUITests.release.xcconfig"; path = "Target Support Files/Pods-new-pilter-new-pilterUITests/Pods-new-pilter-new-pilterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B93ABE23AC0123A7E758C354 /* Pods-new-pilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-new-pilter.debug.xcconfig"; path = "Target Support Files/Pods-new-pilter/Pods-new-pilter.debug.xcconfig"; sourceTree = "<group>"; };
+		C263BFB9D8E07BCAE10E7BD3 /* Pods-new-pilter-new-pilterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-new-pilter-new-pilterUITests.debug.xcconfig"; path = "Target Support Files/Pods-new-pilter-new-pilterUITests/Pods-new-pilter-new-pilterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F74726E2711626B5F684B4A0 /* Pods_new_pilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_new_pilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,11 +69,15 @@
 		};
 		1BBD86432E13E9E100CB4D1C /* new-pilterTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "new-pilterTests";
 			sourceTree = "<group>";
 		};
 		1BBD864D2E13E9E100CB4D1C /* new-pilterUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = "new-pilterUITests";
 			sourceTree = "<group>";
 		};
@@ -65,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B13329F2E1BEB540013ADB0 /* PinLayout in Frameworks */,
+				1B13329D2E1BEB540013ADB0 /* FlexLayout in Frameworks */,
+				9801A3A217981C613FC2EA8D /* Pods_new_pilter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312DCB147398038B8305E31F /* Pods_new_pilterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,19 +106,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DF98652C0C252CF0594FF1 /* Pods_new_pilter_new_pilterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B13329B2E1BEB540013ADB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74726E2711626B5F684B4A0 /* Pods_new_pilter.framework */,
+				2DF56EDDEBBE4E9EFD2B31B2 /* Pods_new_pilter_new_pilterUITests.framework */,
+				9D63DD96DB3A71090C2EC044 /* Pods_new_pilterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1BBD86212E13E9E000CB4D1C = {
 			isa = PBXGroup;
 			children = (
 				1BBD862C2E13E9E000CB4D1C /* new-pilter */,
+				1B1332B62E1D0EA60013ADB0 /* Assets.xcassets */,
 				1BBD86432E13E9E100CB4D1C /* new-pilterTests */,
 				1BBD864D2E13E9E100CB4D1C /* new-pilterUITests */,
+				1B13329B2E1BEB540013ADB0 /* Frameworks */,
 				1BBD862B2E13E9E000CB4D1C /* Products */,
+				B868B6144BB25626806416FE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +146,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B868B6144BB25626806416FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B93ABE23AC0123A7E758C354 /* Pods-new-pilter.debug.xcconfig */,
+				0B0CA32685F93E208C02AFB4 /* Pods-new-pilter.release.xcconfig */,
+				C263BFB9D8E07BCAE10E7BD3 /* Pods-new-pilter-new-pilterUITests.debug.xcconfig */,
+				B579E8CAA923F134B1F0DD79 /* Pods-new-pilter-new-pilterUITests.release.xcconfig */,
+				A8010C7421BAC7B48C0EEEF4 /* Pods-new-pilterTests.debug.xcconfig */,
+				6AB958357AD19184DA62B052 /* Pods-new-pilterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BBD86532E13E9E100CB4D1C /* Build configuration list for PBXNativeTarget "new-pilter" */;
 			buildPhases = (
+				49C4ED93844A7CB094B65E71 /* [CP] Check Pods Manifest.lock */,
 				1BBD86262E13E9E000CB4D1C /* Sources */,
 				1BBD86272E13E9E000CB4D1C /* Frameworks */,
 				1BBD86282E13E9E000CB4D1C /* Resources */,
@@ -125,6 +181,8 @@
 			);
 			name = "new-pilter";
 			packageProductDependencies = (
+				1B13329C2E1BEB540013ADB0 /* FlexLayout */,
+				1B13329E2E1BEB540013ADB0 /* PinLayout */,
 			);
 			productName = "new-pilter";
 			productReference = 1BBD862A2E13E9E000CB4D1C /* new-pilter.app */;
@@ -134,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BBD86582E13E9E100CB4D1C /* Build configuration list for PBXNativeTarget "new-pilterTests" */;
 			buildPhases = (
+				1BC169A1E869421D49F1B4B0 /* [CP] Check Pods Manifest.lock */,
 				1BBD863C2E13E9E100CB4D1C /* Sources */,
 				1BBD863D2E13E9E100CB4D1C /* Frameworks */,
 				1BBD863E2E13E9E100CB4D1C /* Resources */,
@@ -147,8 +206,6 @@
 				1BBD86432E13E9E100CB4D1C /* new-pilterTests */,
 			);
 			name = "new-pilterTests";
-			packageProductDependencies = (
-			);
 			productName = "new-pilterTests";
 			productReference = 1BBD86402E13E9E100CB4D1C /* new-pilterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BBD865B2E13E9E100CB4D1C /* Build configuration list for PBXNativeTarget "new-pilterUITests" */;
 			buildPhases = (
+				C5C826A3326E53CA033748EB /* [CP] Check Pods Manifest.lock */,
 				1BBD86462E13E9E100CB4D1C /* Sources */,
 				1BBD86472E13E9E100CB4D1C /* Frameworks */,
 				1BBD86482E13E9E100CB4D1C /* Resources */,
@@ -170,8 +228,6 @@
 				1BBD864D2E13E9E100CB4D1C /* new-pilterUITests */,
 			);
 			name = "new-pilterUITests";
-			packageProductDependencies = (
-			);
 			productName = "new-pilterUITests";
 			productReference = 1BBD864A2E13E9E100CB4D1C /* new-pilterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -208,6 +264,10 @@
 			);
 			mainGroup = 1BBD86212E13E9E000CB4D1C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1B1332992E1BE8CB0013ADB0 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				1B13329A2E1BE8EB0013ADB0 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1BBD862B2E13E9E000CB4D1C /* Products */;
 			projectDirPath = "";
@@ -225,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1332B72E1D0EA60013ADB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +304,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BC169A1E869421D49F1B4B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-new-pilterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49C4ED93844A7CB094B65E71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-new-pilter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C826A3326E53CA033748EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-new-pilter-new-pilterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BBD86262E13E9E000CB4D1C /* Sources */ = {
@@ -284,6 +414,7 @@
 /* Begin XCBuildConfiguration section */
 		1BBD86542E13E9E100CB4D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B93ABE23AC0123A7E758C354 /* Pods-new-pilter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +442,7 @@
 		};
 		1BBD86552E13E9E100CB4D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0CA32685F93E208C02AFB4 /* Pods-new-pilter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +589,7 @@
 		};
 		1BBD86592E13E9E100CB4D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8010C7421BAC7B48C0EEEF4 /* Pods-new-pilterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +608,7 @@
 		};
 		1BBD865A2E13E9E100CB4D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB958357AD19184DA62B052 /* Pods-new-pilterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +627,7 @@
 		};
 		1BBD865C2E13E9E100CB4D1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C263BFB9D8E07BCAE10E7BD3 /* Pods-new-pilter-new-pilterUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -509,6 +644,7 @@
 		};
 		1BBD865D2E13E9E100CB4D1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B579E8CAA923F134B1F0DD79 /* Pods-new-pilter-new-pilterUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -563,6 +699,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B1332992E1BE8CB0013ADB0 /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+		1B13329A2E1BE8EB0013ADB0 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B13329C2E1BEB540013ADB0 /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B1332992E1BE8CB0013ADB0 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		1B13329E2E1BEB540013ADB0 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B13329A2E1BE8EB0013ADB0 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BBD86222E13E9E000CB4D1C /* Project object */;
 }
